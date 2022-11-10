@@ -188,5 +188,16 @@ public class Sprite implements Serializable {
     public String toString() {
         return "entities.Sprite[ id=" + id + " ]";
     }
+    
+     public Sprite update(Sprite sprite) {
+        Sprite.this.setDx(sprite.getDx());
+        Sprite.this.setDy(sprite.getDy());
+        Sprite.this.setPanelHeight(sprite.getPanelHeight());
+        Sprite.this.setPanelWidth(sprite.getPanelWidth());
+        Sprite.this.setX(sprite.getX());
+        Sprite.this.setY(sprite.getY());
+
+        return sprite;
+    }
 
 }

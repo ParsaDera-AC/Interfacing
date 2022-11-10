@@ -5,15 +5,15 @@
  */
 package service;
 
+import cst8218.dera0014.entity.*;
 import java.util.List;
 import javax.persistence.EntityManager;
 
 /**
  *
- * @author parsa
+ * @author tgk
  */
 public abstract class AbstractFacade<T> {
-
     private Class<T> entityClass;
 
     public AbstractFacade(Class<T> entityClass) {
