@@ -1,0 +1,10 @@
+com\mycompany\lab4parsa\util\JsfUtil.class
+com\mycompany\lab4parsa\AppUser.class
+com\mycompany\lab4parsa\AppUserController.class
+com\mycompany\lab4parsa\AbstractFacade.class
+com\mycompany\lab4parsa\resources\JavaEE8Resource.class
+com\mycompany\lab4parsa\JAXRSConfiguration.class
+com\mycompany\lab4parsa\AppUserFacade.class
+com\mycompany\lab4parsa\AppUserController$AppUserControllerConverter.class
+com\mycompany\lab4parsa\AppUserController$1.class
+com\mycompany\lab4parsa\util\PaginationHelper.class
