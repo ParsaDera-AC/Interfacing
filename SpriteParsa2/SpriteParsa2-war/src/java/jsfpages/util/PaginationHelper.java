@@ -2,6 +2,13 @@ package jsfpages.util;
 
 import javax.faces.model.DataModel;
 
+
+
+
+/**
+ * The pagination Helper class is there to help pagination when dealing with lists.
+ * @author parsa
+ */
 public abstract class PaginationHelper {
 
     private int pageSize;

@@ -12,6 +12,11 @@ import javax.ejb.Singleton;
 /**
  *
  * @author tgk
+ * 
+ * This class is more or less on the client side which is responsible for 
+ * creating a new sprite when user clicks...Basically most of the things here
+ * are implemented by client side.
+ * 
  */
 @Singleton
 public class SpriteGame {
@@ -20,7 +25,7 @@ public class SpriteGame {
     public static final int WIDTH = 500;
 
     List<Sprite> sprites;  // the list of Sprites in the game
-    @EJB
+    @EJB                                                            //could also use Inject, but I didn't use it for this assignment since it breaks it for some reason
     private SpriteFacade spriteFacade;
 
     public List<Sprite> getSpriteList() {

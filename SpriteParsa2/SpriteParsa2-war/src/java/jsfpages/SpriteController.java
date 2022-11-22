@@ -19,6 +19,16 @@ import javax.faces.model.DataModel;
 import javax.faces.model.ListDataModel;
 import javax.faces.model.SelectItem;
 
+
+
+
+/**
+ *      purpose: This class is the controller class for the JSF pages that were created it from the Sprite entity class
+ * 
+ * 
+ * @author parsa
+ */
+
 @Named("spriteController")
 @SessionScoped
 public class SpriteController implements Serializable {

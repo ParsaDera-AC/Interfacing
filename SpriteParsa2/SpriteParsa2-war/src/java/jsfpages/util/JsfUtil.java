@@ -7,6 +7,20 @@ import javax.faces.context.FacesContext;
 import javax.faces.convert.Converter;
 import javax.faces.model.SelectItem;
 
+
+
+
+/**
+ * Jsf utility object. It is responsible for many things such as:
+
+    1. Add the error message in the {@code Exception} to FacesContext
+    2. Add general error message to FacesContext.
+    3. Convert a collection entity to an array of {@code SelectItem}
+    4. Generate an array of {@code SelectItem} for {@code h:selectItems} tag.
+        and etc..
+ * @author parsa
+ */
+
 public class JsfUtil {
 
     public static SelectItem[] getSelectItems(List<?> entities, boolean selectOne) {

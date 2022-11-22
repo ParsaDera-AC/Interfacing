@@ -20,9 +20,11 @@
                     <h:outputLabel value="#{bundle.EditSpriteLabel_panelHeight}" for="panelHeight" />
                     <h:inputText id="panelHeight" value="#{spriteController.selected.panelHeight}" title="#{bundle.EditSpriteTitle_panelHeight}" />
                     <h:outputLabel value="#{bundle.EditSpriteLabel_x}" for="x" />
-                    <h:inputText id="x" value="#{spriteController.selected.x}" title="#{bundle.EditSpriteTitle_x}" />
+                    <h:inputText id="x" value="#{spriteController.selected.x}" title="#{bundle.EditSpriteTitle_x}" >
+                        <f:validateLongRange minimum="0" maximum="500" /></h:inputText>
                     <h:outputLabel value="#{bundle.EditSpriteLabel_y}" for="y" />
-                    <h:inputText id="y" value="#{spriteController.selected.y}" title="#{bundle.EditSpriteTitle_y}" />
+                    <h:inputText id="y" value="#{spriteController.selected.y}" title="#{bundle.EditSpriteTitle_y}" >
+                        <f:validateLongRange minimum="0" maximum="500" /></h:inputText>
                     <h:outputLabel value="#{bundle.EditSpriteLabel_dx}" for="dx" />
                     <h:inputText id="dx" value="#{spriteController.selected.dx}" title="#{bundle.EditSpriteTitle_dx}" />
                     <h:outputLabel value="#{bundle.EditSpriteLabel_dy}" for="dy" />

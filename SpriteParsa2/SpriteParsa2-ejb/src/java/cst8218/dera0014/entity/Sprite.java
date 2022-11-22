@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package cst8218.dera0014.entity;
 
 import java.awt.Color;
@@ -17,8 +12,14 @@ import javax.persistence.Id;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
- *
- * @author tgk
+ * 
+ * @author parsa
+ * 
+ *      The sprite class is essentially the entity class which contains 
+ *      the properties of the sprite such as speed, Id, dx, dy and etc. The sprite 
+ *      instance from this class
+ *      with the mentioned properties is essentially what will be shown as a "sprite" 
+ *      when client runs the game.
  */
 @Entity
 @XmlRootElement
@@ -189,6 +190,18 @@ public class Sprite implements Serializable {
         return "entities.Sprite[ id=" + id + " ]";
     }
     
+    
+    
+    /**
+     * 
+     *      This is method of the Sprite class so that 
+     *      can be called on the old Sprite with a new Sprite as an argument
+     *      This class will replace the old values with the new ones. 
+     *      Essentially it updates the properties of the Sprite instance
+     * 
+     * @param sprite the sprite instance that is about to be updated
+     * @return the newly replaced instance(replaced properties) 
+     */
      public Sprite update(Sprite sprite) {
         Sprite.this.setDx(sprite.getDx());
         Sprite.this.setDy(sprite.getDy());
@@ -199,5 +212,8 @@ public class Sprite implements Serializable {
 
         return sprite;
     }
+     
+     
+     
 
 }
